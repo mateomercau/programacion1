@@ -17,9 +17,24 @@ español, de 27 letras, el siguiente cálculo matemático permite volver a comen
 vez que se llegó a la “z”: (índice de la letra a correr+corrimiento)%27
 Sólo se encriptarán las letras de los mensajes, dejando al resto de caracteres sin modificación."""
 
-"""for n in range(0,5):
-    print(n)
-"""
+mensajes = ['ataque', 'defensa', 'retirada', 'guardia', 'extra']
+
+alfabeto = 'abcdefghijklmnñopqrstuvwxyz'
+
+corrimiento = int(input('Ingrese el numero de corrimiento: '))
+
+encriptado = ''
+
+for i in range(len(mensajes)): 
+    mensaje = mensajes[i]
+    for j in range(len(mensaje)):
+
+        encriptado = encriptado + alfabeto[(alfabeto.index(mensaje[j]) + corrimiento) % 27]
+
+        if(j == len(mensaje) - 1):
+            print(encriptado)
+
+    encriptado = ''  
 
 
 """2- Crear un programa que solicite el ingreso de números enteros positivos, hasta que el usuario ingrese el
