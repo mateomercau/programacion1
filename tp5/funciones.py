@@ -72,7 +72,7 @@ def login(user, password):
         return True
     else:
         return False
-    
+#10
 def calculate_final_price(cart):
     final_price = 0
 
@@ -85,7 +85,7 @@ def calculate_final_price(cart):
             final_price += product_info['precio']
 
     return final_price
-
+#11
 def increase(list):
     final = []
     for i in range(len(list)):
@@ -96,7 +96,7 @@ def increase(list):
 def calculation (fun, array):
     result= fun(array)
     return result 
-
+#12
 def words_length_dictionary(sentence):
     words = sentence.split()
     
@@ -106,7 +106,7 @@ def words_length_dictionary(sentence):
         dictionary[word] = len(word)
     
     return dictionary
-
+#13
 def vector_modulus(vector):
     sum_of_squares = 0
     
@@ -116,7 +116,7 @@ def vector_modulus(vector):
     modulus = math.sqrt(sum_of_squares)
     
     return modulus
-
+#14
 def is_prime (number):
     if number <= 1:
         return False
@@ -124,13 +124,13 @@ def is_prime (number):
         if number % i == 0:
             return False
     return True
-
+#15
 def factorial(n):
     if n == 0:
         return 1
     else:
         return n * factorial(n - 1)
-
+#16
 def digit_frequency(number, digit):
     frequency = 0
     while number > 0:
@@ -139,7 +139,7 @@ def digit_frequency(number, digit):
             frequency += 1
         number = number // 10
     return frequency
-
+#17
 def sum_digits(number):
     sum = 0
     while number > 0:
