@@ -1,6 +1,6 @@
 from funciones import *
 
-# Ejercicio 1
+"""# Ejercicio 1
 
 indentification=str(input("Ingrese el número de DNI: "))
 
@@ -104,11 +104,12 @@ attempts = 0
 while attempts < 3:
     user = input("Nombre de usuario: ")
     password = input("Contraseña: ")
-    acces_correct, attempts = login(user, password, attempts)
+    acces_correct= login(user, password)
     if acces_correct:
         print("Inicio de sesión exitoso.")
         break
     else:
+        attempts+=1
         print("Nombre de usuario o contraseña incorrectos. Intentos restantes: ", 3 - attempts)
     
 if attempts == 3: 
@@ -154,7 +155,7 @@ print(f"Los precios actuazlizados para el mes de noviembre con un aumento del 20
 
 sentence = input("Ingrese una frase: ")
 result = words_length_dictionary(sentence)
-print(result)
+print(result)"""
 
 # Ejercicio 13
 
