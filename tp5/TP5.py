@@ -1,6 +1,6 @@
 from funciones import *
 
-"""# Ejercicio 1
+# Ejercicio 1
 
 indentification=str(input("Ingrese el número de DNI: "))
 
@@ -155,7 +155,7 @@ print(f"Los precios actuazlizados para el mes de noviembre con un aumento del 20
 
 sentence = input("Ingrese una frase: ")
 result = words_length_dictionary(sentence)
-print(result)"""
+print(result)
 
 # Ejercicio 13
 
